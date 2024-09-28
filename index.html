@@ -8,125 +8,143 @@
 </head>
 
 <body>
-    <header>
-        <div class="flex">
-            <h1>WDC</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SPEAKER</a></li>
-                    <li><a href="#">SESSION</a></li>
+    <header class="l-header">
+        <div class="l-header__flex">
+            <h1 class="l-header__flex__heading">WDC</h1>
+            <nav class="l-header__flex__gnav">
+                <ul class="p-gnav">
+                    <li class="p-gnav__list"><a href="#">ABOUT</a></li>
+                    <li class="p-gnav__list"><a href="#">SPEAKER</a></li>
+                    <li class="p-gnav__list"><a href="#">SESSION</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <div class="wrapper">
-                <span>Web Design Conference vol.24</span>
-                <h2>WORK<br>REVOLUTION</h2>
-                <span><time datetime="2030-05-30">2030.05.30</time></span>
-                <button>お申し込み</button>
-                <span>ショーン・デイビット・ジュニア氏</span>
-                <span>Webデザイナー</span>
+
+    <main class="l-main">
+        <section class="p-secMV">
+            <div class="u-wrapper">
+                <span class="p-secMV__subtitle">Web Design Conference vol.24</span>
+                <h2 class="p-secMV__title">WORK<br>REVOLUTION</h2>
+                <span class="p-secMV__date"><time datetime="2030-05-30">2030.05.30</time></span>
+                <button class="p-secMV__btnApp">お申し込み</button>
+                <span class="p-secMV__name">ショーン・デイビット・ジュニア氏</span>
+                <span class="p-secMV__job">Webデザイナー</span>
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <h2>ABOUT</h2>
-                <span>イベントについて</span>
-                <div class="flex">
-                    <img src="" alt="">
-                    <div class="ctn">
-                        <span>テーマ</span>
-                        <h3>定時で帰る</h3>
-                        <p>残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！ さぁ、Let's go home now!</p>
-                        <dl>
-                            <dt>日時</dt>
-                            <dd>2030年5月30日（土） 13:00-翌朝13:00</dd>
-                            <dt>会場</dt>
-                            <dd>オンライン</dd>
-                            <dt>定員</dt>
-                            <dd>3名</dd>
-                            <dt>参加費</dt>
-                            <dd>無料</dd>
+        <section class="p-secAbout">
+            <div class="u-wrapper">
+                <div class="c-commonHeading">
+                    <h2 class="c-commonHeading__main">ABOUT</h2>
+                    <span class="c-commonHeading__sub">イベントについて</span>
+                </div>
+                <div class="p-secAbout__flex">
+                    <div class="p-secAbout__imgCtn"><img src="" alt=""></div>
+                    <div class="p-secAbout__textCtn">
+                        <span class="p-secAbout__textCtn__captionTheme">テーマ</span>
+                        <h3 class="p-secAbout__textCtn__theme">定時で帰る</h3>
+                        <p class="p-secAbout__textCtn__para">残業は心と体に良くないです。世界最速で定時に帰る男、ショーン・デイビット・ジュニア氏が定時で帰るためのスペシャルな技を紹介！ さぁ、Let's go home now!</p>
+                        <dl class="p-secAbout__textCtn__infoList">
+                            <dt class="p-secAbout__textCtn__term">日時</dt>
+                            <dd class="p-secAbout__textCtn__data">2030年5月30日（土） 13:00-翌朝13:00</dd>
+                            <dt class="p-secAbout__textCtn__term">会場</dt>
+                            <dd class="p-secAbout__textCtn__data">オンライン</dd>
+                            <dt class="p-secAbout__textCtn__term">定員</dt>
+                            <dd class="p-secAbout__textCtn__data">3名</dd>
+                            <dt class="p-secAbout__textCtn__term">参加費</dt>
+                            <dd class="p-secAbout__textCtn__data">無料</dd>
                         </dl>
-                        <button>お申し込み</button>
+                        <button class="p-secAbout__textCtn__btnApp">お申し込み</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <h2>SPEAKER</h2>
-                <span>スピーカー</span>
-                <div class="flex">
-                    <div class="ctn">
-                        <h3>Shawn David Jr</h3>
-                        <span>ショーン・デイビット・ジュニア</span>
-                        <p>株式会社スタート代表取締役。Webデザイナー。<br>
+        <section class="p-secSpeaker">
+            <div class="u-wrapper">
+                <div class="c-commonHeading">
+                    <h2 class="c-commonHeading__main">SPEAKER</h2>
+                    <span class="c-commonHeading__sub">スピーカー</span>
+                </div>
+                <div class="p-secSpeaker__flex">
+                    <div class="p-secSpeaker__textCtn">
+                        <h3 class="p-secSpeaker__name">Shawn David Jr</h3>
+                        <span class="p-secSpeaker__nameSub">ショーン・デイビット・ジュニア</span>
+                        <p class="p-secSpeaker__para">株式会社スタート代表取締役。Webデザイナー。<br>
                             定時になると仕事用の脳と身体機能が停止し自動的に帰路につく男。ショーン氏のその姿は人間と言うよりもさながらアンドロイドのようである。<br>
                             ショーン氏は著書『会社ではアンドロイドになれ』の中でこう語っている。<br>
                             「会社における仕事において、我々は自分を機械、そうアンドロイドと思い込むべきだ。定時になれば自動で仕事用の機能は停止されるのだ。決められた時間に、設定されたタスクのみを行う、それがアンドロイドの役目だろう？そして、それは会社で働く我々人間の権利でもある」<br>
                             アンドロイドのように働くべきと語るショーン氏の考え方はディストピア思想と揶揄されるが、本イベントでは氏の考え方をたっぷりと味わいたい。</p>
                     </div>
+                    <div class="p-secSpeaker__imgCtn">
+                        <img src="" alt="">
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="ctn">
-                        <h3>Mihoko Tennis</h3>
-                        <span>ミホコ・テニース</span>
-                        <p>会社員兼プロテニスプレイヤー。WTOランキング63,984位。<br>
+                <div class="p-secSpeaker__flex">
+                    <div class="p-secSpeaker__textCtn">
+                        <h3 class="p-secSpeaker__name">Mihoko Tennis</h3>
+                        <span class="p-secSpeaker__nameSub">ミホコ・テニース</span>
+                        <p class="p-secSpeaker__para">会社員兼プロテニスプレイヤー。WTOランキング63,984位。<br>
                             会社員をしながらプロテニスプレイヤーとしても生計を立てているミホコ氏。平日は仕事で忙しい中、一体どのようにテニスの練習時間を捻出しているのか？会社にもテニスラケットを持ち込むというミホコ氏のワーキングスタイルに迫る。</p>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="ctn">
-                        <h3>Jecica Pannacotta</h3>
-                        <span>ジェシカ・パンナコッタ</span>
-                        <p>フリーランスのエンジニア。<br>
-                            「絶対に自宅でフルリモートで働く」という徹底したモットーに基づき、約7年間外出をしていない。インターネットを信仰しており、リアルやオフラインよりもオンラインを最重要視するライフスタイルを実践している。「外に出たら負け」が口グセのジェシカ氏の『超ネット仕事術』は必聴。</p>
+                    <div class="p-secSpeaker__imgCtn">
+                        <img src="" alt="">
                     </div>
                 </div>
+
+                <div class="p-secSpeaker__flex">
+                    <div class="ctn">
+                        <h3 class="p-secSpeaker__name">Jecica Pannacotta</h3>
+                        <span class="p-secSpeaker__nameSub">ジェシカ・パンナコッタ</span>
+                        <p class="p-secSpeaker__para">フリーランスのエンジニア。<br>
+                            「絶対に自宅でフルリモートで働く」という徹底したモットーに基づき、約7年間外出をしていない。インターネットを信仰しており、リアルやオフラインよりもオンラインを最重要視するライフスタイルを実践している。「外に出たら負け」が口グセのジェシカ氏の『超ネット仕事術』は必聴。</p>
+                    </div>
+                    <div class="p-secSpeaker__imgCtn">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <h2>SESSION</h2>
-                <span>セッション</span>
-                <ul>
-                    <li>
-                        <dl>
-                            <dt>13:00-14:00</dt>
-                            <dd>ライトニングトーク：定時に帰る、それはアンドロイドになること</dd>
-                            <dd>スピーカー：ショーン・デイビット・ジュニア<br>
+        <section class="p-secSession">
+            <div class="u-wrapper">
+                <div class="c-commonHeading"></div>
+                    <h2 class="c-commonHeading__main">SESSION</h2>
+                    <span class="c-commonHeading__sub">セッション</span>
+                </div>
+                <ul class="p-secSession__list">
+                    <li class="p-secSession__list__item">
+                        <dl class="p-secSession__list__item__def">
+                            <dt class="p-secSession__list__item__time">13:00-14:00</dt>
+                            <dd class="p-secSession__list__item__content">ライトニングトーク：定時に帰る、それはアンドロイドになること</dd>
+                            <dd class="p-secSession__list__item__contentDetail">スピーカー：ショーン・デイビット・ジュニア<br>
                                 人間らしくあろうとすること、それが残業を生むのだ。さぁ！アンドロイドになるのだ！</dd>
                         </dl>
                     </li>
-                    <li>
-                        <dl>
-                            <dt>14:00-18:00</dt>
-                            <dd>ショーンのとっておきの定時に帰る方法</dd>
-                            <dd>スピーカー：ショーン・デイビット・ジュニア
+                    <li class="p-secSession__list__item">
+                        <dl class="p-secSession__list__item__def">
+                            <dt class="p-secSession__list__item__time">14:00-18:00</dt>
+                            <dd class="p-secSession__list__item__content">ショーンのとっておきの定時に帰る方法</dd>
+                            <dd class="p-secSession__list__item__contentDetail">スピーカー：ショーン・デイビット・ジュニア
                                 アンドロイド的定時に帰る方法を紹介。ワタシ、テイジデカエリマス。</dd>
                         </dl>
                     </li>
-                    <li>
-                        <dl>
-                            <dt>18:00-24:00</dt>
-                            <dd>公私混同仕事術</dd>
-                            <dd>スピーカー：ショーン・デイビット・ジュニア<br>
+                    <li class="p-secSession__list__item">
+                        <dl class="p-secSession__list__item__def">
+                            <dt class="p-secSession__list__item__time">18:00-24:00</dt>
+                            <dd class="p-secSession__list__item__content">公私混同仕事術</dd>
+                            <dd class="p-secSession__list__item__contentDetail">スピーカー：ショーン・デイビット・ジュニア<br>
                                 スピーカー：ミホコ・テニース<br>
                                 私は会社にもテニスラケットを持ち込む。そう、もういっそのこと仕事と趣味の境界線を消しましょう。</dd>
                         </dl>
                     </li>
-                    <li>
-                        <dl>
-                            <dt>24:00-13:00</dt>
-                            <dd>超ネット仕事術</dd>
-                            <dd>超ネット仕事術<br>
+                    <li class="p-secSession__list__item">
+                        <dl class="p-secSession__list__item__def">
+                            <dt class="p-secSession__list__item__time">24:00-13:00</dt>
+                            <dd class="p-secSession__list__item__content">超ネット仕事術</dd>
+                            <dd class="p-secSession__list__item__contentDetail">超ネット仕事術<br>
                                 スピーカー：ジェシカ・パンナコッタ<br>
                                 ７年間一度も外出せずに仕事をする方法を紹介。自宅大好きっ！</dd>
                         </dl>
@@ -135,42 +153,44 @@
             </div>
         </section>
 
-        <section>
-            <div class="wrappre">
-                <h2>REGISTOR</h2>
-                <span>お申し込み</span>
-                <div class="ctn">
+        <section class="p-secRegistor">
+            <div class="wrapper">
+                <div class="c-commonHeading"></div>
+                    <h2 class="c-commonHeading__main">REGISTOR</h2>
+                    <span class="c-commonHeading__sub">お申し込み</span>
+                </div>
+                <div class="p-secRegistor__box">
                     <form action="">
-                        <span>ご職業</span>
-                        <input type="checkbox" id="office_worker">
-                        <label for="office_worker">会社員</label>
-                        <input type="checkbox" id="solo_prop">
-                        <label for="solo_prop">個人事業主</label>
-                        <input type="checkbox" id="searching">
-                        <label for="searching">求職中</label>
-                        <input type="checkbox" id="others">
-                        <label for="others">その他</label>
+                        <span class="p-secRegistor__box__itemLabel">ご職業</span>
+                        <input type="radio" name="job" id="office_worker">
+                        <label for="office_worker" class="p-secRegistor__box__radioCap">会社員</label>
+                        <input type="radio" name="job" id="solo_prop">
+                        <label for="solo_prop" class="p-secRegistor__box__radioCap">個人事業主</label>
+                        <input type="radio" name="job" id="searching">
+                        <label for="searching" class="p-secRegistor__box__radioCap">求職中</label>
+                        <input type="radio" name="job" id="others">
+                        <label for="others" class="p-secRegistor__box__radioCap">その他</label>
 
-                        <label for="name">お名前<span>*必須</span></label>
-                        <input type="text" id="name">
+                        <label for="name" class="p-secRegistor__box__itemLabel">お名前<span class="p-secRegistor__box__required">*必須</span></label>
+                        <input type="text" id="name" class="p-secRegistor__box__boxName">
 
-                        <label for="mail">メールアドレス<span>*必須</span></label>
-                        <input type="text" id="mail">
+                        <label for="mail" class="p-secRegistor__box__itemLabel">メールアドレス<span class="p-secRegistor__box__required">*必須</span></label>
+                        <input type="text" id="mail" class="p-secRegistor__box__boxMail">
 
-                        <label for="tel">電話番号<span>（半角数字ハイフンなし）</span></label>
-                        <input type="text" id="tel">
+                        <label for="tel" class="p-secRegistor__box__itemLabel">電話番号<span class="p-secRegistor__box__note">（半角数字ハイフンなし）</span></label>
+                        <input type="text" id="tel" class="p-secRegistor__box__boxTel">
 
-                        <label for="question">スピーカーに質問したいこと<span>*必須</span></label>
-                        <textarea name="question" id="question"></textarea>
+                        <label for="question" class="p-secRegistor__box__itemLabel">スピーカーに質問したいこと<span class="p-secRegistor__box__required">*必須</span></label>
+                        <textarea name="question" id="question" class="p-secRegistor__box__boxQuestion"></textarea>
 
-                        <label for="where">WDCをどちらでお知りになりましたか？<span>*必須</span></label>
-                        <select name="where" id="where">
+                        <label for="where" class="p-secRegistor__box__itemLabel">WDCをどちらでお知りになりましたか？<span class="p-secRegistor__box__required">*必須</span></label>
+                        <select name="where" id="where"  class="p-secRegistor__box__boxWhere">
                             <option value="select">選択してください</option>
                             <option value="one">1</option>
                             <option value="two">2</option>
                         </select>
 
-                        <input type="button" value="送信する">
+                        <input type="button" value="送信する" class="p-secRegistor__btnSend">
                     </form>
                 </div>
             </div>
@@ -178,8 +198,8 @@
 
         <div class="return_to_top"></div>
 
-        <footer>
-            <span>&copy;2030 Web Design Conference</span>
+        <footer class="l-footer">
+            <span class="l-footer__copy">&copy;2030 Web Design Conference</span>
         </footer>
     </main>
 </body>
