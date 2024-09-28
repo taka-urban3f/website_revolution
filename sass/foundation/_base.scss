@@ -4,12 +4,14 @@
 :root {
     --color-purple: #D136D1;
     --color-reddishPurple: #DD118E;
+    --color-mainBlack: #141414;
 }
 
 html {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 700;
     font-size: 100%;
+    color: white;
     font-feature-settings: "palt";
 }
 
