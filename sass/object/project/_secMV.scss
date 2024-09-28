@@ -1,0 +1,98 @@
+// _secMV.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.p-secMV {
+    height: 51.2vw;
+    background-image: url(../img/sean_mv.png), linear-gradient(117deg, #0E002E, #1E092B 23%, #320C65 49%, #A01B7C 80%, #C21780);
+    background-size: 40.9% 105%, 100%;
+    background-position: 92% bottom, center;
+    background-repeat: no-repeat;
+
+    &__ctn {
+        padding: 11.2vw 4.685vw 0 7.174vw;
+    }
+
+    &__subtitle {
+        @include base.font_montserrat;
+        font-size: 1.756vw;
+        letter-spacing: 0.05em;
+        line-height: 1;
+        color: var(--color-purple);
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 1.39vw;
+        @include base.font_montserrat;
+        font-size: 7.32vw;
+        letter-spacing: 0.016em;
+        line-height: 1;
+        color: white;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 23.86vw;
+            height: 4.978vw;
+            bottom: -5.672vw;
+            left: 26.04vw;
+            background-image: url(../img/teiji-de-kaerumon.svg);
+            background-size: contain;
+            background-position: center;
+            transform: rotate(-13deg);
+        }
+    }
+
+    &__date {
+        margin-top: 0.7vw;
+        @include base.font_montserrat;
+        font-size: 2.635vw;
+        letter-spacing: 0.07em;
+        line-height: 1.15;
+        color: white;
+    }
+
+    &__btnApp {
+        display: block;
+        margin-top: 2.342vw;
+        padding: 1.756vw 7.54vw;
+        background-image: linear-gradient(to right, #C41A7F, #664BBF);
+        border-radius: 100px;
+        font-size: 1.317vw;
+        letter-spacing: 0.05em;
+        line-height: 1;
+        color: white;
+        filter: drop-shadow(0 10px 0 var(--color-reddishPurple));
+    }
+
+    &__ctnName {
+        margin-top: 6.295vw;
+        margin-left: auto;
+        margin-right: 0;
+        width: fit-content;
+
+        &__name {
+            display: block;
+            margin-top: 0.7vw;
+            font-size: 1.537vw;
+            letter-spacing: -0.06em;
+            line-height: 1;
+            color: white;
+
+            &__uzi {
+                font-size: 1.229vw;
+                letter-spacing: 0.05em;
+            }
+        }
+
+        &__job {
+            display: block;
+            margin-top: 3px;
+            font-size: 1.024vw;
+            letter-spacing: 0.05em;
+            line-height: 1;
+            color: white;
+        }
+    }
+}
