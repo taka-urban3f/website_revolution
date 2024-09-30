@@ -1,0 +1,18 @@
+// _footer.scss
+// ----------------------------------------------------------------------------
+@use '../foundation/base';
+
+.l-footer {
+    display: grid;
+    place-items: center;
+    height: 159px;
+
+    background-color: var(--color-mainBlack);
+
+    &__copy {
+
+        @include base.font_montserrat;
+        letter-spacing: 0.05em;
+        line-height: 1.15;
+    }
+}

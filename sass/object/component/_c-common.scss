@@ -20,3 +20,25 @@
         color: white;
     }
 }
+
+.c-returnToTop {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    right: 40px;
+    bottom: 40px;
+    width: 80px;
+    height: 80px;
+    background-image: linear-gradient(to bottom right,#C41A7F, #664BBF);
+    border-radius: 50%;
+
+    &::after {
+        display: block;
+        content: '';
+        height: 16px;
+        width: 16px;
+        border-top: 4px solid white;
+        border-left: 4px solid white;
+        transform: translateY(25%) rotate(45deg) ;
+    }
+}
