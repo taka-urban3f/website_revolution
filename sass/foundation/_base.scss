@@ -42,3 +42,11 @@ textarea {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
+
+$device_types: ('sp': 'screen and (max-width:576px)', 'tab': 'screen and (max-width:768px)');
+
+@mixin mq($device) {
+    @media #{map-get($device_types, $device)} {
+        @content;
+    }
+}
