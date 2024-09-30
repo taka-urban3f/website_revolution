@@ -1,0 +1,100 @@
+// _secRegistor.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.p-secRegistor {
+    padding: 110px 0 110px;
+    background-image: url(../img/bg.png);
+    background-position: 0 0;
+
+    &__heading {
+        margin-bottom: 60px;
+    }
+
+    &__box {
+        padding: 90px 0 80px;
+        border-radius: 20px;
+        border: 5px solid var(--color-purple);
+        letter-spacing: 0.05em;
+        line-height: 1.15;
+
+        &__inner {
+            padding: 0 80px;
+        }
+
+        &__itemLabel {
+            display: block;
+            margin-bottom: 10px;
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &__required {
+            margin-left: 9px;
+            font-size: base.p2r(11.2);
+            color: var(--color-purple);
+        }
+
+        &__note {
+            margin-left: 5px;
+            font-size: base.p2r(12);
+        }
+
+        &__radioFlex {
+            display: flex;
+            column-gap: 35px
+        }
+
+        &__radioCap {
+            @include base.font_montserrat;
+            font-weight: 500;
+        }
+
+        &__boxName {
+            max-width: 100%;
+            width: 300px;
+            height: 35px;
+        }
+
+        &__boxMail {
+            max-width: 100%;
+            width: 300px;
+            height: 35px;
+        }
+
+        &__boxTel {
+            max-width: 100%;
+            width: 200px;
+            height: 35px;
+        }
+
+        &__boxQuestion {
+            max-width: 100%;
+            width: 600px;
+            height: 200px;
+        }
+
+        &__boxWhere {
+            max-width: 100%;
+            width: 300px;
+            height: 35px;
+
+        }
+
+        &__btnSend {
+            margin: 50px auto 0;
+            display: block;
+            width: fit-content;
+            padding: 24px 113px;
+            background-image: linear-gradient(to right, #C41A7F, #664BBF);
+            border-radius: 100px;
+            color: white;
+            font-size: base.p2r(18);
+            letter-spacing: 0.05em;
+            line-height: 1;
+            filter: drop-shadow(0 10px 0 var(--color-reddishPurple));
+        }
+    }
+}

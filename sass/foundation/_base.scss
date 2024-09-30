@@ -19,6 +19,20 @@ img {
     width: 100%;
 }
 
+input,
+select,
+textarea {
+    appearance: auto;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+textarea {
+    padding: 5px;
+}
+
 @function p2r($pixel) {
     @return $pixel / 16 * 1rem;
 }

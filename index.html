@@ -183,45 +183,42 @@
         </section>
 
         <section class="p-secRegistor">
-            <div class="wrapper">
-                <div class="c-commonHeading"></div>
-                <h2 class="c-commonHeading__main">REGISTOR</h2>
-                <span class="c-commonHeading__sub">お申し込み</span>
+            <div class="u-wrapper">
+                <div class="c-commonHeading p-secRegistor__heading">
+                    <h2 class="c-commonHeading__main">REGISTOR</h2>
+                    <span class="c-commonHeading__sub">お申し込み</span>
+                </div>
+                <div class="p-secRegistor__box">
+                    <form action="#">
+                        <div class="p-secRegistor__box__inner">
+                            <span class="p-secRegistor__box__itemLabel">ご職業<span class="p-secRegistor__box__required">*必須</span></span>
+                            <div class="p-secRegistor__box__radioFlex">
+                                <label class="p-secRegistor__box__radioCap"><input type="radio" name="job" required>会社員</label>
+                                <label class="p-secRegistor__box__radioCap"><input type="radio" name="job">個人事業主</label>
+                                <label class=" p-secRegistor__box__radioCap"><input type="radio" name="job">求職中</label>
+                                <label class="p-secRegistor__box__radioCap"><input type="radio" name="job">その他</label>
+                            </div>
+                            <label for="name" class="p-secRegistor__box__itemLabel">お名前<span class="p-secRegistor__box__required">*必須</span></label>
+                            <input type="text" id="name" class="p-secRegistor__box__boxName" required>
+                            <label for="mail" class="p-secRegistor__box__itemLabel">メールアドレス<span class="p-secRegistor__box__required">*必須</span></label>
+                            <input type="text" id="mail" class="p-secRegistor__box__boxMail" required>
+                            <label for="tel" class="p-secRegistor__box__itemLabel">電話番号<span class="p-secRegistor__box__note">（半角数字ハイフンなし）</span></label>
+                            <input type="text" id="tel" class="p-secRegistor__box__boxTel">
+                            <label for="question" class="p-secRegistor__box__itemLabel">スピーカーに質問したいこと<span class="p-secRegistor__box__required">*必須</span></label>
+                            <textarea name="question" placeholder="ご自由にお書きください" id="question" class="p-secRegistor__box__boxQuestion" required></textarea>
+                            <label for="where" class="p-secRegistor__box__itemLabel">WDCをどちらでお知りになりましたか？<span class="p-secRegistor__box__required">*必須</span></label>
+                            <select name="where" id="where" class="p-secRegistor__box__boxWhere" required>
+                                <option value="" hidden>選択してください</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                            </select>
+                        </div>
+
+                        <input type="submit" value="送信する" class="p-secRegistor__box__btnSend">
+                    </form>
+                </div>
             </div>
-            <div class="p-secRegistor__box">
-                <form action="#">
-                    <span class="p-secRegistor__box__itemLabel">ご職業</span>
-                    <input type="radio" name="job" id="office_worker">
-                    <label for="office_worker" class="p-secRegistor__box__radioCap">会社員</label>
-                    <input type="radio" name="job" id="solo_prop">
-                    <label for="solo_prop" class="p-secRegistor__box__radioCap">個人事業主</label>
-                    <input type="radio" name="job" id="searching">
-                    <label for="searching" class="p-secRegistor__box__radioCap">求職中</label>
-                    <input type="radio" name="job" id="others">
-                    <label for="others" class="p-secRegistor__box__radioCap">その他</label>
-
-                    <label for="name" class="p-secRegistor__box__itemLabel">お名前<span class="p-secRegistor__box__required">*必須</span></label>
-                    <input type="text" id="name" class="p-secRegistor__box__boxName">
-
-                    <label for="mail" class="p-secRegistor__box__itemLabel">メールアドレス<span class="p-secRegistor__box__required">*必須</span></label>
-                    <input type="text" id="mail" class="p-secRegistor__box__boxMail">
-
-                    <label for="tel" class="p-secRegistor__box__itemLabel">電話番号<span class="p-secRegistor__box__note">（半角数字ハイフンなし）</span></label>
-                    <input type="text" id="tel" class="p-secRegistor__box__boxTel">
-
-                    <label for="question" class="p-secRegistor__box__itemLabel">スピーカーに質問したいこと<span class="p-secRegistor__box__required">*必須</span></label>
-                    <textarea name="question" id="question" class="p-secRegistor__box__boxQuestion"></textarea>
-
-                    <label for="where" class="p-secRegistor__box__itemLabel">WDCをどちらでお知りになりましたか？<span class="p-secRegistor__box__required">*必須</span></label>
-                    <select name="where" id="where" class="p-secRegistor__box__boxWhere">
-                        <option value="select">選択してください</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                    </select>
-
-                    <input type="button" value="送信する" class="p-secRegistor__btnSend">
-                </form>
-            </div>
+            <!-- u-wrapperここまで -->
         </section>
 
         <div class="return_to_top"></div>
