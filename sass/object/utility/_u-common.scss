@@ -1,0 +1,9 @@
+// _u-common.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.u-wrapper {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1210px;
+}

@@ -1,0 +1,22 @@
+// _c-common.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.c-commonHeading {
+    display: grid;
+    place-items: center;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-align: center;
+
+    &__main {
+        @include base.font_montserrat;
+        font-size: base.p2r(60);
+        color: var(--color-purple);
+    }
+
+    &__sub {
+        font-size: base.p2r(20);
+        color: white;
+    }
+}

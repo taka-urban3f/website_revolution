@@ -1,0 +1,56 @@
+// _secSession.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.p-secSession {
+    padding: 110px 0 110px;
+    background-color: var(--color-mainBlack);
+
+    &__heading {
+        margin-bottom: 100px;
+    }
+
+    &__list {
+        &__item {
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--color-purple);
+
+            &:not(:first-child) {
+                padding-top: 40px;
+
+            }
+        }
+    }
+
+    &__ctn {
+        display: flex;
+
+        &__time {
+            margin: 0 64px 0 30px;
+            @include base.font_montserrat;
+            font-size: base.p2r(22);
+            letter-spacing: 0.05em;
+            line-height: 1.15;
+        }
+
+        &__content {
+            &__title {
+                margin-bottom: 15px;
+                font-size: base.p2r(22);
+                letter-spacing: 0.05em;
+                line-height: 1.15;
+                color: var(--color-purple);
+            }
+
+            &__detail {
+                font-size: base.p2r(15);
+                letter-spacing: 0.05em;
+                line-height: 1.5;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+
+}

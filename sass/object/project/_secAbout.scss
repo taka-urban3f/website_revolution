@@ -1,0 +1,91 @@
+// _secAbout.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.p-secAbout {
+    padding: 110px 0 110px;
+    background-color: var(--color-mainBlack);
+
+    &__heading {
+        margin-bottom: 60px;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    &__imgCtn {
+        flex-basis: 40%;
+
+        &__img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__textCtn {
+        padding-top: 89px;
+        padding-bottom: 95px;
+        padding-left: 69px;
+        flex-basis: 60%;
+
+        &__captionTheme {
+            display: block;
+            font-size: base.p2r(24);
+            line-height: 1.15;
+        }
+
+        &__theme {
+            margin-top: 20px;
+            font-size: base.p2r(48);
+            letter-spacing: 0.1em;
+            color: var(--color-purple);
+        }
+
+        &__para {
+            margin-top: 40px;
+            font-size: base.p2r(18);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            line-height: 1.8;
+        }
+
+        &__infoList {
+            margin-top: 25px;
+            @include base.font_montserrat;
+            letter-spacing: 0.05em;
+            line-height: 1.15;
+
+            &__flex {
+                display: flex;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                &__term {
+                    flex-basis: 88px;
+                }
+
+                &__data {
+                    font-weight: 400;
+                    flex: 1;
+                }
+            }
+        }
+
+        &__btnApp {
+            display: block;
+            width: fit-content;
+            margin-top: 25px;
+            padding: 24px 68px;
+            background-image: linear-gradient(to right, #664BBF, #BA2073);
+            border-radius: 100px;
+            font-size: base.p2r(18);
+            letter-spacing: 0.05em;
+            line-height: 1;
+            filter: drop-shadow(0 10px 0 var(--color-reddishPurple));
+        }
+    }
+}
