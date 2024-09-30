@@ -1,0 +1,57 @@
+// _secAbout.scss
+// ----------------------------------------------------------------------------
+@use '../../foundation/base';
+
+.p-secSpeaker {
+    padding: 110px 0 110px;
+    background-image: linear-gradient(to bottom right, #0F002E, #1E092B 23%, #320C65 49%, #A01B7C 80%, #C21780);
+
+    &__heading {
+        margin-bottom: 60px;
+    }
+
+    &__flex {
+        display: flex;
+        column-gap: 60px;
+
+        &:not(:last-child) {
+            margin-bottom: 80px;
+        }
+
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__textCtn {
+        flex: 1;
+
+        &__name {
+            margin-bottom: 10px;
+            @include base.font_montserrat;
+            font-size: base.p2r(42);
+            letter-spacing: 0.05em;
+            line-height: 1;
+            color: var(--color-purple);
+        }
+
+        &__nameSub {
+            display: block;
+            margin-bottom: 40px;
+            font-size: base.p2r(18);
+            letter-spacing: 0.05em;
+            line-height: 1;
+        }
+
+        &__para {
+            font-weight: 400;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+
+        }
+    }
+
+    &__imgCtn {
+        flex-basis: 40%;
+    }
+}
