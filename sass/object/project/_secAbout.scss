@@ -55,6 +55,7 @@
             margin-top: 20px;
             font-size: base.p2r(48);
             letter-spacing: 0.1em;
+            line-height: 1;
             color: var(--color-purple);
         }
 
@@ -69,8 +70,6 @@
         &__infoList {
             margin-top: 25px;
             @include base.font_montserrat;
-            letter-spacing: 0.05em;
-            line-height: 1.15;
 
             &__flex {
                 display: flex;
@@ -80,10 +79,14 @@
                 }
 
                 &__term {
+                    letter-spacing: 0.05em;
+                    line-height: 1.15;
                     flex-basis: 88px;
                 }
 
                 &__data {
+                    letter-spacing: 0.05em;
+                    line-height: 1.15;
                     font-weight: 400;
                     flex: 1;
                 }

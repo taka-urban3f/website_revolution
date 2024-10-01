@@ -3,7 +3,7 @@
 @use '../../foundation/base';
 
 .p-secRegistor {
-    padding: 110px 0 110px;
+    padding: 90px 0 110px;
     background-image: url(../img/bg.png);
     background-position: 0 0;
 
@@ -12,7 +12,8 @@
     }
 
     &__box {
-        padding: 90px 0 80px;
+        padding: 85px 0 85px;
+        background-color: #1A1A1A;
         border-radius: 20px;
         border: 5px solid var(--color-purple);
         letter-spacing: 0.05em;
@@ -23,7 +24,7 @@
         }
 
         &__inner {
-            padding: 0 80px;
+            padding: 0 153px;
 
             @include base.mq(tab) {
                 padding: 0 20px;
@@ -64,6 +65,10 @@
         &__radioCap {
             @include base.font_montserrat;
             font-weight: 500;
+        }
+
+        &__radio {
+            margin-right: 5px;
         }
 
         &__boxName {

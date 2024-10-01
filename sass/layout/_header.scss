@@ -22,6 +22,7 @@
 
         &__heading {
             font-size: base.p2r(28);
+            letter-spacing: 0.05em;
             line-height: 1;
             color: var(--color-purple);
         }
@@ -50,6 +51,8 @@
             }
 
             &__link {
+                letter-spacing: 0.05em;
+
                 &:hover {
                     filter: drop-shadow(0 0 3px white)
                 }
@@ -96,7 +99,7 @@
                     }
 
                     &:nth-child(3) {
-                        transform: translateY(2px)  rotate(-45deg);
+                        transform: translateY(2px) rotate(-45deg);
                     }
                 }
             }

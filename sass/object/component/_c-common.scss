@@ -5,13 +5,13 @@
 .c-commonHeading {
     display: grid;
     place-items: center;
-    letter-spacing: 0.05em;
-    line-height: 1;
     text-align: center;
 
     &__main {
         @include base.font_montserrat;
         font-size: base.p2r(60);
+        letter-spacing: 0.05em;
+        line-height: 1;
         color: var(--color-purple);
 
         @include base.mq(tab) {
@@ -20,7 +20,10 @@
     }
 
     &__sub {
+        margin-top: 10px;
         font-size: base.p2r(20);
+        letter-spacing: 0.05em;
+        line-height: 1;
         color: white;
 
         @include base.mq(tab) {
