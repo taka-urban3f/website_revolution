@@ -13,11 +13,19 @@
         @include base.font_montserrat;
         font-size: base.p2r(60);
         color: var(--color-purple);
+
+        @include base.mq(tab) {
+            font-size: base.p2r(40);
+        }
     }
 
     &__sub {
         font-size: base.p2r(20);
         color: white;
+
+        @include base.mq(tab) {
+            font-size: base.p2r(15);
+        }
     }
 }
 
@@ -29,7 +37,7 @@
     bottom: 40px;
     width: 80px;
     height: 80px;
-    background-image: linear-gradient(to bottom right,#C41A7F, #664BBF);
+    background-image: linear-gradient(to bottom right, #C41A7F, #664BBF);
     border-radius: 50%;
 
     &::after {
@@ -39,7 +47,7 @@
         width: 16px;
         border-top: 4px solid white;
         border-left: 4px solid white;
-        transform: translateY(25%) rotate(45deg) ;
+        transform: translateY(25%) rotate(45deg);
     }
 
     &:hover {

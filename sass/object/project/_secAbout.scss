@@ -12,6 +12,10 @@
 
     &__flex {
         display: flex;
+
+        @include base.mq(tab) {
+            display: block;
+        }
     }
 
     &__imgCtn {
@@ -21,6 +25,11 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+
+            @include base.mq(tab) {
+                aspect-ratio: 16/9;
+                object-position: 50% 30%;
+            }
         }
     }
 
@@ -29,6 +38,12 @@
         padding-bottom: 95px;
         padding-left: 69px;
         flex-basis: 60%;
+
+        @include base.mq(tab) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 0;
+        }
 
         &__captionTheme {
             display: block;
