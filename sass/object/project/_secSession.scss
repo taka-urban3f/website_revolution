@@ -17,7 +17,6 @@
 
             &:not(:first-child) {
                 padding-top: 40px;
-
             }
         }
     }
@@ -25,12 +24,21 @@
     &__ctn {
         display: flex;
 
+        @include base.mq(tab) {
+            display: block;
+        }
+
         &__time {
             margin: 0 64px 0 30px;
             @include base.font_montserrat;
             font-size: base.p2r(22);
             letter-spacing: 0.05em;
             line-height: 1.15;
+            flex-shrink: 0;
+
+            @include base.mq(tab) {
+                margin: 0 0 10px;
+            }
         }
 
         &__content {
@@ -49,8 +57,5 @@
                 font-weight: 400;
             }
         }
-
     }
-
-
 }
