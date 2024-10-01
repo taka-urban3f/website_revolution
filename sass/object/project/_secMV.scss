@@ -11,8 +11,9 @@
     background-repeat: no-repeat;
 
     @include base.mq(tab) {
-        background-size: 50%, 100%;
-        background-position: 100% top, center;
+        height: 100vw;
+        background-size: 70%, 100%;
+        background-position: 130% bottom, center;
     }
 
     &__ctn {
@@ -46,6 +47,13 @@
             background-size: contain;
             background-position: center;
             transform: rotate(-13deg);
+
+            @include base.mq(tab) {
+                width: 35.79vw;
+                height: 7.467vw;
+                bottom: -10vw;
+                left: 15vw;
+            }
         }
     }
 
@@ -67,32 +75,23 @@
         font-size: max(base.p2r(16), 1.317vw);
         letter-spacing: 0.05em;
         line-height: 1;
-        filter: drop-shadow(0 10px 0 var(--color-reddishPurple));
+        filter: drop-shadow(0 0.73vw 0 var(--color-reddishPurple));
         transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 
         &:hover {
-            transform: translateY(10px);
+            transform: translateY(0.73vw);
             filter: drop-shadow(0 0 0 var(--color-reddishPurple));
         }
 
         @include base.mq(tab) {
-            filter: drop-shadow(0 5px 0 var(--color-reddishPurple));
-
-            &:hover {
-                transform: translateY(5px);
-                filter: drop-shadow(0 0 0 var(--color-reddishPurple));
-            }
+            margin-top: 12.7vw;
         }
     }
 
     &__ctnName {
         position: absolute;
-        // margin-top: 6.295vw;
-        // margin-left: auto;
-        // margin-right: 0;
         right: 4.685vw;
         bottom: 1.464vw;
-        // width: fit-content;
 
         &__name {
             display: block;
