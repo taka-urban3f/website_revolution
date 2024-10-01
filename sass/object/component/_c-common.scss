@@ -41,4 +41,8 @@
         border-left: 4px solid white;
         transform: translateY(25%) rotate(45deg) ;
     }
+
+    &:hover {
+        filter: brightness(120%);
+    }
 }
