@@ -10,6 +10,10 @@
     @include base.font_montserrat;
     z-index: 1;
 
+    @include base.mq(tab) {
+        padding: 15px 15px 15px;
+    }
+
     &__flex {
         display: flex;
         justify-content: space-between;

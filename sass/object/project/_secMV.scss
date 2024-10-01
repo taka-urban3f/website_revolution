@@ -3,6 +3,7 @@
 @use '../../foundation/base';
 
 .p-secMV {
+    position: relative;
     height: 51.2vw;
     background-image: url(../img/sean_mv.png), linear-gradient(117deg, #0E002E, #1E092B 23%, #320C65 49%, #A01B7C 80%, #C21780);
     background-size: 40.9% 105%, 100%;
@@ -58,7 +59,7 @@
         padding: 1.756vw 7.54vw;
         background-image: linear-gradient(to right, #C41A7F, #664BBF);
         border-radius: 100px;
-        font-size: 1.317vw;
+        font-size: max(base.p2r(16), 1.317vw);
         letter-spacing: 0.05em;
         line-height: 1;
         filter: drop-shadow(0 10px 0 var(--color-reddishPurple));
@@ -68,13 +69,25 @@
             transform: translateY(10px);
             filter: drop-shadow(0 0 0 var(--color-reddishPurple));
         }
+
+        @include base.mq(tab) {
+            filter: drop-shadow(0 5px 0 var(--color-reddishPurple));
+
+            &:hover {
+                transform: translateY(5px);
+                filter: drop-shadow(0 0 0 var(--color-reddishPurple));
+            }
+        }
     }
 
     &__ctnName {
-        margin-top: 6.295vw;
-        margin-left: auto;
-        margin-right: 0;
-        width: fit-content;
+        position: absolute;
+        // margin-top: 6.295vw;
+        // margin-left: auto;
+        // margin-right: 0;
+        right: 4.685vw;
+        bottom: 1.464vw;
+        // width: fit-content;
 
         &__name {
             display: block;
