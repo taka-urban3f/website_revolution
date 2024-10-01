@@ -18,8 +18,16 @@
         letter-spacing: 0.05em;
         line-height: 1.15;
 
+        @include base.mq(tab) {
+            padding: 45px 0 40px;
+        }
+
         &__inner {
             padding: 0 80px;
+
+            @include base.mq(tab) {
+                padding: 0 20px;
+            }
         }
 
         &__itemLabel {
@@ -44,7 +52,13 @@
 
         &__radioFlex {
             display: flex;
-            column-gap: 35px
+            column-gap: 35px;
+
+            @include base.mq(tab) {
+                flex-direction: column;
+                row-gap: 10px;
+                margin-left: 10px;
+            }
         }
 
         &__radioCap {
@@ -100,6 +114,10 @@
             &:hover {
                 transform: translateY(10px);
                 filter: drop-shadow(0 0 0 var(--color-reddishPurple));
+            }
+
+            @include base.mq(tab) {
+                padding: 24px 90px;
             }
         }
     }
