@@ -6,4 +6,8 @@
     margin: 0 auto;
     padding: 0 50px;
     max-width: 1210px;
+
+    @include base.mq(tab) {
+        padding: 0 20px;
+    }
 }

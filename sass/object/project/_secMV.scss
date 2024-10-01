@@ -6,9 +6,14 @@
     position: relative;
     height: 51.2vw;
     background-image: url(../img/sean_mv.png), linear-gradient(117deg, #0E002E, #1E092B 23%, #320C65 49%, #A01B7C 80%, #C21780);
-    background-size: 40.9% 105%, 100%;
+    background-size: 40.9%, 100%;
     background-position: 92% bottom, center;
     background-repeat: no-repeat;
+
+    @include base.mq(tab) {
+        background-size: 50%, 100%;
+        background-position: 100% top, center;
+    }
 
     &__ctn {
         padding: 11.2vw 4.685vw 0 7.174vw;

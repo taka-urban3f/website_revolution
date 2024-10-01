@@ -21,6 +21,10 @@
         &:nth-child(odd){
             flex-direction: row-reverse;
         }
+
+        @include base.mq(tab) {
+            display: block;
+        }
     }
 
     &__textCtn {
@@ -33,6 +37,10 @@
             letter-spacing: 0.05em;
             line-height: 1;
             color: var(--color-purple);
+
+            @include base.mq(tab) {
+                font-size: base.p2r(30);
+            }
         }
 
         &__nameSub {
@@ -41,6 +49,10 @@
             font-size: base.p2r(18);
             letter-spacing: 0.05em;
             line-height: 1;
+
+            @include base.mq(tab) {
+                font-size: base.p2r(13);
+            }
         }
 
         &__para {
@@ -53,5 +65,9 @@
 
     &__imgCtn {
         flex-basis: 40%;
+
+        @include base.mq(tab) {
+            margin-top: 30px;
+        }
     }
 }
